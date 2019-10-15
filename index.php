@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="fr">
 <?php
-	/* Détermination du nom de la page à charger après vérification de sa validité */
+	/* Dï¿½termination du nom de la page ï¿½ charger aprï¿½s vï¿½rification de sa validitï¿½ */
 	if (!isset($_GET['page']) || ($_GET['page'] == "")) {
 		$affiche = "mapage1.php";
 	} else if ($_GET['page'] == "test1") {
 		$affiche = "mapage1.php";
 	} else if ($_GET['page'] == "test2") {
 		$affiche = "mapage2.php";
+	} else if ($_GET['page'] == "test3") {
+		$affiche = "mapage3.php";
 	} else {
 		$affiche = "lostinspace.php";
 	}
-	/* Par convention, il peut exister une page de configuration du même nom mais avec un préfixe "config-" */
+	/* Par convention, il peut exister une page de configuration du mï¿½me nom mais avec un prï¿½fixe "config-" */
 	$config = "config-".$affiche;
 	include('default-config.php');
 	@include($config); // l'arobas permet de ne pas afficher d'erreur si le fichier de configuration de la page n'existe pas (par exemple pour page 2)

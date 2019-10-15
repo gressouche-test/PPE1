@@ -1,1 +1,1 @@
-<p>Erreur 404, cette page n'existe pas dans cette dimension...</p>
+<p>Erreur 404, page non trouvée, appeler l'équipe de développement</p>

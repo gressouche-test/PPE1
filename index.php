@@ -10,7 +10,9 @@
 		$affiche = "mapage2.php";
 	} else if ($_GET['page'] == "test3") {
 		$affiche = "mapage3.php";
-	} else {
+	} else if ($_GET['page'] == "test4") {
+		$affiche = "mapage4.php";
+	}else {
 		$affiche = "lostinspace.php";
 	}
 	/* Par convention, il peut exister une page de configuration du m�me nom mais avec un pr�fixe "config-" */
